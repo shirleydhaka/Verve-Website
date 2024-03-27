@@ -3,8 +3,9 @@
         margin: 0;
         padding: 0;
     }
+    /*NAVBAR*/
     .navbar {
-        background-color: #333;
+        background-color: #ffffff;
         color: #fff;
         display: flex;
         justify-content: space-between;
@@ -17,6 +18,7 @@
     }
     .navbar-brand {
         font-size: 1.2em;
+        color: #000000;
     }
     .navbar-nav {
         list-style: none;
@@ -33,38 +35,47 @@
         margin-right: 0;
     }
     .nav-link {
-        color: #fff;
+        color: #000000;
         text-decoration: none;
     }
-    .signout-button {
-        background-color: #fff;
-        color: #333;
-        border: none;
-        padding: 8px 16px;
-        border-radius: 4px;
-        text-decoration: none;
-    }
-    .navbar-nav :hover{
-        color: #848484;
-    }
-
-    /* Responsive adjustments */
-    @media only screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         .navbar {
             flex-direction: column;
             align-items: flex-start;
         }
         .navbar-nav {
-            justify-content: flex-start;
+            justify-content: flex-start; /* Align navigation links to the left on smaller screens */
         }
         .nav-item {
-            margin-right: 0;
-            margin-bottom: 10px;
-        }
-        .signout-button {
-            margin-top: 10px;
+            margin: 5px 0; /* Adjust margin for smaller screens */
         }
     }
+    
+    @media screen and (max-width: 576px) {
+        .navbar {
+            padding: 10px;
+        }
+    }
+    /*signout button*/
+    .signout-button {
+        background-color: #333;
+        color: #ffffff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    @media screen and (max-width: 600px) {
+        .signout-button {
+            padding: 6px 12px; /* Adjust padding for smaller screens */
+        }
+    }
+    .navbar-nav :hover{
+        color: #848484;
+    }
+
+    /*CONTENT*/
+
     .center-container {
         position: relative;
         height: 100vh;
@@ -91,12 +102,14 @@
     }
     .verve{
         color: #000000;
-        margin-left: -53px;
+        margin-left: -124px;
+        top: -31px;
     }
     .in{
-        margin-left: -215px;
-        color: #cfcfcfc7;
+        margin-left: -240px;
+        color: #272727c7;
         opacity: 2px;
+        top: 117px;
     }
     
     .description {
@@ -106,6 +119,7 @@
         order: -1; /* Move the description above */
         margin-left: -1px;
         text-align: center;
+        margin-top: -240px;
 
     }
     
@@ -113,33 +127,39 @@
     @media only screen and (max-width: 768px) {
         .verve-in {
             font-size: 15vw;
+            margin-left: 17px;
+        }
+        .in {
+            margin-left: -105px;
+            opacity: 1;
+            
         }
         .description {
-            margin-top: 10px;
+            margin-top: -264px;
             font-size: 14px;
         }
     }
     .showinterest {
-        padding: 10px 20px;
-        font-size: 16px;
-        background-color: #000000;
+        padding: 13px 20px;
+        font-size: 17px;
+        background-color: #007aff;
         color: #fff;
         border: none;
-        border-radius: 5px;
+        border-radius: 10px;
         cursor: pointer;
         transition: background-color 0.3s ease;
         align-items: center;
         margin-left: 550px;
     }
     .showinterest :hover{
-        color: #848484;
+        background-color: #000000;
     }
     /* Responsive adjustments */
     @media only screen and (max-width: 768px) {
         .showinterest {
-            font-size: 14px; /* Decrease font size for smaller screens */
-            padding: 8px 16px; /* Adjust padding for smaller screens */
-            margin-left: -200px;
+            font-size: 14px;
+            padding: 10px 16px;
+            margin-left: 143px;
         }
     }
     
@@ -156,7 +176,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #fff; /* Optional: Set background color */
+        background-color: #dddddd; /* Optional: Set background color */
         margin-top: 30px;
 
     }
@@ -200,4 +220,151 @@
         height: 246px; /* Adjust height as needed */
         width: 227px;
     }
+    /*Multiple Cards*/ 
+    .card1 {
+        /* Your CSS styles for the card go here */
+        background-color:  #ececec;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 121px;
+        height: 227px;
+        margin-left: 20px;
+        margin-top: 236px
+    }
     
+    .card1 h4 {
+        /* Your CSS styles for the heading inside the card go here */
+        color: #333;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .card2{
+        background-color:  #ececec;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 121px;
+        height: 227px;
+        margin-left: 220px;
+        margin-top: -481px;
+    }
+    .card2 h4 {
+        /* Your CSS styles for the heading inside the card go here */
+        color: #333;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .card3{
+        background-color:  #ececec;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 121px;
+        height: 227px;
+        margin-left: 424px;
+        margin-top: -50px
+    }
+    .card3 h4 {
+        /* Your CSS styles for the heading inside the card go here */
+        color: #333;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .card4{
+        background-color:  #ececec;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 121px;
+        height: 227px;
+        margin-left: 628px;
+        margin-top: -481px;
+       
+    }
+    .card4 h4 {
+        /* Your CSS styles for the heading inside the card go here */
+        color: #333;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .card5{
+        background-color:  #ececec;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 121px;
+        height: 227px;
+        margin-left: 838px;
+        margin-top: -51px;
+    }
+    .card5 h4 {
+        /* Your CSS styles for the heading inside the card go here */
+        color: #333;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .card6{
+        background-color:  #ececec;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 121px;
+        height: 227px;
+        margin-left: 1030px;
+        margin-top: -487px;
+    }
+    .card6 h4 {
+        /* Your CSS styles for the heading inside the card go here */
+        color: #333;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .card7{
+        background-color:  #ececec;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 121px;
+        height: 227px;
+        margin-left: 220px;
+        margin-top: 45px;
+    }
+    .card7 h4 {
+        /* Your CSS styles for the heading inside the card go here */
+        color: #333;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .card8{
+        background-color: #ececec;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 121px;
+        height: 227px;
+        margin-left: 632px;
+        margin-top: -264px
+    }
+    .card8 h4 {
+        /* Your CSS styles for the heading inside the card go here */
+        color: #333;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .card9{
+        background-color: #ececec;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 121px;
+        height: 227px;
+        margin-left: 1031px;
+        margin-top: -267px;
+    }
+    .card9 h4 {
+        /* Your CSS styles for the heading inside the card go here */
+        color: #333;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
